@@ -1,0 +1,43 @@
+<div id="master">
+<a class="list-group-item">
+  <div class="row">
+    <div class="col-sm-1">
+      <img id="empresa" src="{{oferta.imagenUrl}}">
+    </div>
+    <div class="col-sm-6">
+      <a id="anchor" [routerLink]="['/ofertas', 'oferta-info', posicion ]">
+        <h3>{{oferta.nombre}}</h3>
+      </a>
+      <h3>{{oferta.empresa}}</h3>
+      <p>{{oferta.descripcion | acortarDescripcion}}</p>
+    </div>
+
+    <div class="col-sm-3">
+      <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}} </h4>
+    </div>
+    <div class=" col-sm-2">
+      <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{oferta.fechaPubli}}</h4>
+    </div>
+  </div>
+  <div class="row">
+
+    <br>
+    <p>{{oferta.inscrito}}</p>
+  </div>
+  <div class="btn-group">
+    
+    <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
+    <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
+    <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
+    <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
+  </div>
+</a>
+
+<div *ngIf="inscripcion" class="alert alert-success" role="alert">¡Gracias por inscribirte! Próximamente nos pondremos en contacto contigo.</div>
+
+<div *ngIf="bloqueo" class="alert alert-warning" role="alert">Lo sentimos, esta oferta ya no admite más inscripciones.</div>
+
+</div>
+
+
+

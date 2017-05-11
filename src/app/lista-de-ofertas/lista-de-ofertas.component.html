@@ -1,0 +1,27 @@
+
+
+<form id="buscador" class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" #buscador class="form-control" placeholder="Mi trabajo ideal...">
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+</form>
+      <div class="row">
+ <div id="linea" class="col-md-12">
+
+   <h3>Ofertas Publicadas </h3> 
+   <!--<a href="#" class="btn btn-success">Oferta</a>Por el momento se desactiva el boton oferta por no saber su utilidad final-->
+ </div>
+</div>
+
+<div class="row">
+ <div class="col-md-12">
+   <ul class="list-group">
+
+    <app-oferta-item  *ngFor ="let oferta of ofertas | buscador:buscador.value; let posicion = index" [oferta]="oferta" [posicion]="posicion"></app-oferta-item>
+
+    </ul>
+ </div>
+</div>
+
+  

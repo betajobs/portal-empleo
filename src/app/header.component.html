@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+<nav class="nav">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"><Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <div id="divBrand"><a [routerLink]="['../']"><img id="brand" alt="Brand" src=".\assets\LogoLargo.png"/></a></div>
+        </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="frase1"><a [routerLink]="['lista-de-ofertas']"><font color="#ffffff">Ofertas disponibles</font><span class="sr-only">(current)</span></a></li>
+        <li id="frase2"><a href="http://www.lawebdelprogramador.com/noticias/" target="_blank"><font color="#ffffff">Noticias del sector</font></a></li>
+        <li id="frase3"><a href="https://drive.google.com/file/d/0B6VJGz1Tf0MFTnk4X3M0bVJLZFE/view?usp=sharing" target="_blank"><font color="#ffffff">Contacta con nosotros</font></a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <div class="dropdown">
+  <button id="boton2" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ¡Bienvenido!
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li><a href="#">Editar mi perfil</a></li>
+            <li><a href="#">Ver mis ofertas aplicadas</a></li>
+            <li><a href="#">Ver CV</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a [routerLink]="['../']">Cerrar sesión</a></li>
+  </ul>
+</div>
+      </ul>
+     
+           <ul class="nav navbar-nav navbar-right">
+        <div class="dropdown">
+  <button id="boton1" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Empresas<span class="caret"></span>
+  </button>
+  <br>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li><a href="#">Editar mi perfil</a></li>
+            <li><a [routerLink]="['lista-de-ofertas']">Ver mis ofertas subidas</a></li>
+            <li><a [routerLink]="['formulario']">Añadir oferta</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a [routerLink]="['../']">Cerrar sesión</a></li>
+  </ul>
+</div>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<script>
+$('.dropdown-toggle').dropdown()
+</script>
+
+  </body>
+</html>
+

@@ -1,0 +1,40 @@
+#margen { 
+    margin: 10px;
+
+}
+#margin { 
+    margin: 10px;
+    
+}
+
+.resumen { 
+    margin: 5px;
+   font-weight: bold;
+   
+}
+#resum { 
+/*poner estilo negrita y gris al texto resumen*/
+font-weight: bold;
+color: grey;
+}
+
+#lista{
+/*poner el estilo al los titulos de la lista del resumen*/
+}
+
+#anchor {
+/*darle formato al link*/
+
+}
+
+#pagina{
+    margin: 0px;
+    border: solid lightgray;
+   border-width: 80px; 
+}
+
+#empresa { 
+    height: 100px;
+    width: 100px;
+
+}

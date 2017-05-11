@@ -1,0 +1,78 @@
+<br>
+<br>
+<div id="pagina" class="row">
+<h1><b> Añadir / editar las ofertas</b> </h1>
+<a id="link" class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
+<br>
+
+<form [formGroup]="miFormulario" (ngSubmit)="enviarMiFormulario()">
+  <div>
+    <div class="col-md-7 form-group"> 
+      <label for="nombre" class="col-lg-4 control-label">Nombre oferta</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Nombre Oferta">
+      </div>
+    </div>
+    <div class="col-md-7 form-group"> 
+      <label for="empresa" class="col-lg-4 control-label">Empresa</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="empresa" formControlName="empresa" placeholder="Nombre Empresa">
+      </div>
+    </div>
+  <div class="col-md-7 form-group"> 
+      <label for="Descripcion" class="col-lg-4 control-label">Descripción oferta</label>
+      <div class="col-xs-4 col-sm-6">
+        <textarea rows="8" cols="8" class="form-control" id="descripcion" formControlName="descripcion"> </textarea>
+      </div>
+    </div>
+   <div class="col-md-7 form-group"> 
+      <label for="Ciudad" class="col-lg-4 control-label">Ciudad</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="ciudad" formControlName="ciudad" placeholder="Lugar de la oferta">
+      </div>
+    </div>
+    <div class="col-md-7 form-group"> 
+      <label for="Fecha" class="col-lg-4 control-label">Fecha oferta</label>
+      <div class="col-lg-4">
+        <input type="date" step="1" class="form-control" id="fechaPubli" formControlName="fechaPubli">
+      </div>
+    </div>
+    
+    <div class="col-md-7 form-group"> 
+      <label for="Jornada" class="col-lg-4 control-label">Tipo de oferta</label>
+      <div class="col-lg-4">
+           <select id="tipoDeOferta" formControlName="tipoDeOferta" class="form-control">
+              <option value="Elegir una opción">Elegir una opción</option>
+              <option value="Jornada completa">Jornada completa</option>
+              <option value="Jornada parcial">Jornada parcial</option>
+              <option value="Prácticas">Prácticas</option>
+              <option value="Freelance">Freelance</option>
+              <option value="Proyecto">Proyecto</option>
+            </select>
+      </div>
+    </div>
+    
+    <div class="col-md-7 form-group"> 
+      <label for="Fecha" class="col-lg-4 control-label">Página web</label>
+      <div class="col-lg-4">
+        <input type="url" class="form-control" id="web" formControlName="web" placeholder="Ej: www.betajobs.es">
+      </div>
+    </div>
+
+   <div class="col-md-7 form-group"> 
+      <label for="Imagen" class="col-lg-4 control-label">Logo empresa</label>
+      <div class="col-lg-4">
+        <input type="url" id="imagenUrL" formControlName="imagenUrl" #imagen>
+      </div>
+    </div>
+
+    <br>
+    <div class="form-group">
+      <div class="col-lg-offset-0 col-lg-10">
+        <button id="botonEnviar" type="submit" class="btn btn-default" [disabled]="miFormulario.invalid">Enviar</button>
+      </div>
+    </div>
+
+  </div>
+</form>
+</div>

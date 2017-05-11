@@ -1,0 +1,32 @@
+#brand {
+    height: 55px;
+    margin-left: 43px;
+}
+#divBrand {
+    margin-top: -10px;
+}
+
+nav {
+    font-size: 15px;
+    padding: 0px;
+}
+
+.navbar {
+    color: black;
+    background-color: #3370e2;
+    height: 65px;
+}
+
+#boton1 {
+    margin-top: 13px;
+}
+
+#boton2 {
+    margin-top: 13px;
+    margin-right: 73px;
+}
+
+#botonEmpresa {
+    margin-left: 20px;
+}
+
