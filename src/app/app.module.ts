@@ -16,6 +16,7 @@ import { DescripcionComponent } from './descripcion/descripcion.component';
 import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
 import { OfertasComponent } from './ofertas/ofertas.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { OfertasComponent } from './ofertas/ofertas.component';
     DescripcionComponent,
     AcortarDescripcionPipe,
     OfertasComponent,
+   
   ],
   imports: [
     BrowserModule,
